@@ -29,16 +29,23 @@ def main():
 
     show("a", a)
     show("mask = a > 20", mask)
-    show("a[mask]", a[mask])
+
+    # this filters the array a and returns only the elements where the mask is True.
+    show("a[mask]", a[mask]) 
     show("a[a % 2 == 0] - even numbers", a[a % 2 == 0])
     show("a[(a > 10) & (a < 50)]", a[(a > 10) & (a < 50)])
 
     section("Setting Values with a Boolean Mask")
     changed = a.copy()
-    changed[changed < 10] = 0
+
+    # this sets all elements in the array changed that are less than 10 to 0.
+    changed[changed < 10] = 0 
     show("changed after changed[changed < 10] = 0", changed)
 
     section("np.where")
+
+    # this line uses np.where to create a new array where elements of a greater 
+    # than 20 are kept, and others are replaced with 0.
     show("np.where(a > 20, a, 0)", np.where(a > 20, a, 0))
     show("np.where(a > 20, 'big', 'small')", np.where(a > 20, "big", "small"))
 
