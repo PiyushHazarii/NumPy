@@ -53,6 +53,7 @@ def main():
     show("complex_array.imag", complex_array.imag)
 
     section("Memory Example")
+    # Before using Data Types, it's important to understand how they affect memory usage.
     float64_arr = np.ones((1000,), dtype=np.float64)
     float32_arr = np.ones((1000,), dtype=np.float32)
     print("float64 bytes:", float64_arr.nbytes)

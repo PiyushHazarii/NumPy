@@ -48,9 +48,12 @@ def main():
     show("matrix after raveled[0] = 999", matrix)
     print("flattened is independent:", flattened)
 
+    print("np.shares_memory(matrix, raveled):", np.shares_memory(matrix, raveled))
+    print("np.shares_memory(matrix, flattened):", np.shares_memory(matrix, flattened))
+
     section("transpose")
     show("b", b)
-    show("b.T", b.T)
+    show("b.T", b.T) # this and the below (b,(1,0)) are equivalent.
     show("np.transpose(b, (1, 0))", np.transpose(b, (1, 0)))
 
     section("Adding and Removing Dimensions")
