@@ -44,7 +44,7 @@ def main():
     print("Result shape:", (column + row).shape)
 
     section("Addition Table")
-    col = np.arange(1, 6).reshape(5, 1)
+    col = np.arange(1, 6).reshape(5, 1) # reshape means 5 row and 1 column in this.
     row = np.arange(1, 6)
     show("col", col)
     show("row", row)
@@ -60,7 +60,7 @@ def main():
         ],
         dtype=float,
     )
-    column_means = data.mean(axis=0)
+    column_means = data.mean(axis=0) # axis=0 means column-wise mean, axis=1 means row-wise mean
     centered = data - column_means
 
     show("data", data)
