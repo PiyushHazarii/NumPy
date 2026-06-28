@@ -34,14 +34,16 @@ def main():
     print("np.var(a):", np.var(a))
     print("np.min(a):", np.min(a))
     print("np.max(a):", np.max(a))
-    print("np.ptp(a):", np.ptp(a))
-    print("np.argmin(a):", np.argmin(a))
-    print("np.argmax(a):", np.argmax(a))
+    print("np.ptp(a):", np.ptp(a)) # peek-to-peak (max - min)
+    print("np.argmin(a):", np.argmin(a)) #argument of the minimum value
+    print("np.argmax(a):", np.argmax(a)) #argument of the maximum value
 
     section("Percentiles and Quantiles")
     print("np.percentile(a, 25):", np.percentile(a, 25))
     print("np.percentile(a, 75):", np.percentile(a, 75))
-    print("np.quantile(a, 0.5):", np.quantile(a, 0.5))
+
+    #The code calculates the 0.5 quantile, which is the exact median (50th percentile) of the array a.
+    print("np.quantile(a, 0.5):", np.quantile(a, 0.5)) # median is the 0.5 quantile
 
     section("Axis-wise Statistics")
     marks = np.array(

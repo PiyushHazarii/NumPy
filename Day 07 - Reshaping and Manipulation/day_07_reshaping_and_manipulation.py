@@ -75,6 +75,8 @@ def main():
 
     show("arr1", arr1)
     show("arr2", arr2)
+
+    #In NumPy, both concatenation and stacking always create a copy.
     show("np.concatenate([arr1, arr2], axis=0)", np.concatenate([arr1, arr2], axis=0))
     show("np.concatenate([arr1, arr2], axis=1)", np.concatenate([arr1, arr2], axis=1))
     show("np.vstack([arr1, arr2])", np.vstack([arr1, arr2]))

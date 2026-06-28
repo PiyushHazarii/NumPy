@@ -64,7 +64,7 @@ def main():
     print("np.sum(matrix):", np.sum(matrix))
     show("np.sum(matrix, axis=0) - column-wise", np.sum(matrix, axis=0))
     show("np.sum(matrix, axis=1) - row-wise", np.sum(matrix, axis=1))
-    print("np.prod(matrix):", np.prod(matrix))
+    print("np.prod(matrix):", np.prod(matrix)) # prints the total product.
     show("np.cumsum(matrix)", np.cumsum(matrix))
     show("np.cumprod(np.array([1, 2, 3, 4]))", np.cumprod(np.array([1, 2, 3, 4])))
     show("np.diff(np.array([10, 15, 22, 30]))", np.diff(np.array([10, 15, 22, 30])))
